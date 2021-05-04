@@ -11,7 +11,6 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-color: wheat;
 }
 
 img {
@@ -32,31 +31,24 @@ a {
     text-decoration: none;
 }
 
-.main {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.sidebar {
-    display: none;
-}
-
 body nav {
-    /* width: 300px; */
+    width: 20%;
+    display: none;
+    visibility: hidden;
     background-color: #3E4645;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     padding: 30px 15px;
-    transition: .3s all ease-in-out;
+    transition: 0.3s display;
 }
 
 body nav ul li a {
     opacity: 0.85;
     font-weight: 300;
     font-size: 34px;
-    transition: .3s all ease-in-out;
+    color: #fff;
 }
 
 body nav ul li a:hover {
@@ -71,10 +63,10 @@ body nav ul li a:hover {
     position: absolute;
     top: 15px;
     right: 15px;
-    transition: .3s all ease-in-out;
+    color: #fff;
 }
 
-.close label::after {
+.close::after {
     content: "";
     display: table;
     clear: both;
@@ -88,16 +80,8 @@ body nav ul li a:hover {
     display: none;
 }
 
-/* #menu:checked + .sidebar {
-    width: 100%;
-} */
-
-#menu:checked + .sidebar {
-    width: 20%;
-}
-
-/* #menu:checked + .sidebar {
-    width: 0;
+/* #menu:checked + main {
+    width: 80%;
 } */
 
 .hero {
@@ -346,10 +330,10 @@ section header ul li a:hover {
 .white-line {
     background-color: white;
     height: 1px;
-    width: 200%;
+    width: 165%;
     position: absolute;
     top: 50%;
-    left: -50%;
+    left: -33%;
     transform: rotate(-51deg);
 }
 
