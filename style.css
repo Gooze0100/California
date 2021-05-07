@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    transition: width .5s ease;
+    transition: .5s ease;
 }
 
 img {
@@ -33,15 +33,15 @@ a {
 }
 
 body nav {
-    width: 0;
+    width: 375px;
     background-color: #3E4645;
     position: fixed;
     top: 0;
     bottom: 0;
-    right: -40px;
+    right: -375px;
     z-index: 2;
     padding: 30px 15px;
-    transition: width .5s ease;
+    transition: .5s all ease;
 }
 
 body nav ul li a {
@@ -318,10 +318,10 @@ section header ul li a:hover {
 .white-line {
     background-color: white;
     height: 1px;
-    width: 165%;
+    width: 160%;
     position: absolute;
-    top: 50%;
-    left: -33%;
+    top: 49%;
+    left: -30%;
     transform: rotate(-51deg);
 }
 
@@ -788,10 +788,6 @@ footer .copyrights p a:hover {
 }
 
 @media screen and (max-width: 730px) {
-    body nav {
-        width: 40%;
-    }
-
     section header ul:first-child {
         visibility: hidden;
     }
@@ -854,10 +850,6 @@ footer .copyrights p a:hover {
 }
 
 @media screen and (max-width: 550px) {
-    body nav {
-        width: 100%;
-    }
-
     .text h2 {
         font-size: 32px;
         width: 250px;
@@ -877,6 +869,14 @@ footer .copyrights p a:hover {
 }
 
 @media screen and (max-width: 420px) {
+    body nav {
+        text-align: center;
+    }
+
+    body nav ul li a {
+        font-size: 40px;
+    }
+
     section header ul:first-child {
         width: 100%;
     }
